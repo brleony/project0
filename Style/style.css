@@ -1,9 +1,13 @@
 body {
-    padding-top: 60px;
-    background-color: #4C5160;
-    color: #ffffff;
-}
+  padding-top: 60px;
+  background-color: #4C5160;
+  color: white; }
+
+.row {
+  padding: 10px; }
+
 ::selection {
-    color: white;
-    background-color: black;
-}
+  color: white;
+  background-color: black; }
+
+/*# sourceMappingURL=style.css.map */

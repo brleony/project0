@@ -1,0 +1,16 @@
+$darkgrey: #4C5160;
+
+body {
+    padding-top: 60px;
+    background-color: $darkgrey;
+    color: white;
+}
+
+.row {
+    padding: 10px;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
