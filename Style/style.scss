@@ -1,10 +1,6 @@
 $darkgrey: #4C5160;
-$lightgrey: #93969f;
+$pink: #e00073;
 
-body {
-    background-color: $darkgrey;
-    color: white;
-}
 
 @media (min-width: 576px) {
     body {
@@ -25,8 +21,18 @@ th, td {
     padding: 5px;
 }
 
-a {
-    color: $lightgrey;
+body {
+    background-color: $darkgrey;
+    color: white;
+}
+
+.container {
+    color: white;
+
+    a {
+    text-decoration-line: underline;
+    color: $pink;
+    }
 }
 
 ::selection {

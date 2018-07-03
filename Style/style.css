@@ -1,7 +1,3 @@
-body {
-  background-color: #4C5160;
-  color: white; }
-
 @media (min-width: 576px) {
   body {
     padding-top: 60px; } }
@@ -14,8 +10,18 @@ body {
 th, td {
   padding: 5px; }
 
-a {
-  color: #93969f; }
+body {
+  background-color: #4C5160;
+  color: white; }
+
+.navbar {
+  background-color: black; }
+
+.container {
+  color: white; }
+  .container a {
+    text-decoration-line: underline;
+    color: #e00073; }
 
 ::selection {
   color: white;
