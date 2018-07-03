@@ -1,8 +1,13 @@
 body {
-  padding-top: 60px;
   background-color: #4C5160;
   color: white; }
 
+@media (min-width: 576px) {
+  body {
+    padding-top: 60px; } }
+@media (max-width: 575px) {
+  body {
+    padding-top: 180px; } }
 .row {
   padding: 10px; }
 

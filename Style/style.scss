@@ -2,9 +2,19 @@ $darkgrey: #4C5160;
 $lightgrey: #93969f;
 
 body {
-    padding-top: 60px;
     background-color: $darkgrey;
     color: white;
+}
+
+@media (min-width: 576px) {
+    body {
+      padding-top: 60px;
+    }
+}
+@media (max-width: 575px) {
+    body {
+      padding-top: 180px;
+    }
 }
 
 .row {
