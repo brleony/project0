@@ -1,27 +1,46 @@
+/* More body padding if screen is 576px or wider, so navbar doesn't hide body */
 @media (min-width: 576px) {
   body {
     padding-top: 60px; } }
 @media (max-width: 575px) {
   body {
     padding-top: 180px; } }
+/* Navbar */
+.navbar-brand {
+  color: #e31981 !important;
+  font-weight: 600 !important; }
+
+.navbar {
+  background-color: black !important; }
+
 .row {
   padding: 10px; }
 
 th, td {
-  padding: 5px; }
+  padding: 7px;
+  border: 1px solid white; }
 
 body {
   background-color: #4C5160;
   color: white; }
 
-.navbar {
-  background-color: black; }
+/* Links */
+.container a:link, .container a:visited, .container a:hover, .container a:active {
+  text-decoration-line: underline;
+  font-weight: 500; }
 
-.container {
-  color: white; }
-  .container a {
-    text-decoration-line: underline;
-    color: #e00073; }
+.container a:link, .container a:visited {
+  color: #e31981; }
+  .container a:link #harvardlink, .container a:visited #harvardlink {
+    color: #A51C30; }
+
+.container a:hover, .container a:active {
+  color: #c9cacf; }
+
+/* Styling for the copyright message */
+.copyright {
+  font-style: italic;
+  color: #c9cacf; }
 
 ::selection {
   color: white;

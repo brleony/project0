@@ -1,7 +1,10 @@
 $darkgrey: #4C5160;
-$pink: #e00073;
+$lightgrey: #c9cacf;
+$pink: #e31981;
+$harvardcrimson: #A51C30;
 
 
+/* More body padding if screen is 576px or wider, so navbar doesn't hide body */
 @media (min-width: 576px) {
     body {
       padding-top: 60px;
@@ -13,12 +16,24 @@ $pink: #e00073;
     }
 }
 
+
+/* Navbar */
+.navbar-brand {
+    color: $pink !important;
+    font-weight: 600 !important;
+}
+.navbar {
+    background-color: black !important;
+}
+
+
 .row {
     padding: 10px;
 }
 
 th, td {
-    padding: 5px;
+    padding: 7px;
+    border: 1px solid white;
 }
 
 body {
@@ -26,14 +41,31 @@ body {
     color: white;
 }
 
-.container {
-    color: white;
-
-    a {
+/* Links */
+%link {
     text-decoration-line: underline;
+    font-weight: 500;
+}
+.container a:link, .container a:visited {
+    @extend %link;
     color: $pink;
+
+    #harvardlink {
+        color: $harvardcrimson;
     }
 }
+.container a:hover, .container a:active {
+    @extend %link;
+    color: $lightgrey;
+}
+
+
+/* Styling for the copyright message */
+.copyright {
+    font-style: italic;
+    color: $lightgrey;
+}
+
 
 ::selection {
     color: white;
